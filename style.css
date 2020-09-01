@@ -43,7 +43,7 @@
 }
 .bg{
 
-    background: rgba(0, 0, 0, 0.637) url(images/cafe.jpg);
+    background: rgba(0, 0, 0, 0.637) url(cafe.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
