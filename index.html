@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS JS cafe</title>
+    <link rel="stylesheet" href="html.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body >
+    <header>
+        <nav class="nav-bar" id="nav-bar2">
+            <div class="logo">
+
+            </div>
+            <ul class="nav-list">
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+            <!-- ul for smaller devices-->
+            <ul class="nav-list2" id="nav-list2">
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+            <button class="contact-btn">Contact Now</button>
+            <div class="burger" id="burger">
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="bg"></div>
+        <div class="cards">
+            <div class="card-1">
+                <i class="fa fa-coffee fa-3x"></i>
+                <br>
+                <h3>Coffee</h3></br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.delite</p>
+            </div>
+            <div class="card-2">
+                <i class="fa fa-clock-o fa-3x"></i>
+                <br>
+                <h3>10am-11pm</h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.delite</p>
+            </div>
+            <div class="card-3">
+               <i class="fa fa-truck fa-3x"></i>
+               <br>
+               <h3>free delivery</h3><br> 
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.dlite</p>
+            </div>
+        </div>
+        <div class="section-1">
+            <h1>You will enjoy our cafe if you love...</h1>
+            <div class="container">
+               <div class="img">
+                <img src="food.jpg" alt="">
+               </div>
+               <div class="text">
+                   <h3>Fresh Food</h3>
+                   <br>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellendus sit deleniti nihil laudantium placeat beatae fu</p>
+                 <br><br>
+                 <button class="btn">Know More</button>
+               </div> 
+               
+            </div>
+            <div class="container">
+              <div class="img">
+                <img src="images/coffee-cup.jpg" alt="">
+              </div>
+              <div class="text">
+                  <h3>Exclucsive Services</h3>
+                  <br>
+                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi quidem eligendi recusandae, animi officiis cumque aspernatur?</p>
+                 <br><br>
+                 <button class="btn">Know More</button> 
+              </div>
+              
+            </div>
+        </div>
+        <div class="services">
+            <div class="service-txt">
+                <h3><span>01</span><br>Great Waiter Service</h3>
+                <h3><span>02</span><br> Great Staff Members</h3>
+            </div>
+            <div class="service-txt">
+                <h3><span>03</span><br> Clean Envirnoment</h3>
+                <h3><span>04</span><br> Great Staff Members</h3>
+            </div>
+            <div class="service-txt">
+                <h2>Four Reasons Visit us</h2>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium optio ad dolore quam quidem eum animi?</p>
+                <br>
+                <button class="btn">Map</button>
+            </div>
+        </div>
+        <h1 style="text-align: center; margin-top: 10px; margin-bottom: 10px;">Know our Team</h1>
+        <div class="teams">
+           
+            <div class="cardt-1">
+                <div class="imgt">
+                  <img src="" alt="">
+                </div>
+                <div class="text-t">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias asperiores voluptate repreh</p>
+                </div>
+            </div>
+            <div class="cardt-2">
+                <div class="imgt">
+                  <img src="" alt="">
+                </div>
+                <div class="text-t">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias asperiores voluptate repreh</p>
+                </div>
+            </div>
+            <div class="cardt-3">
+                <div class="imgt">
+                  <img src="" alt="">
+                </div>
+                <div class="text-t">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias asperiores voluptate repreh</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="foottext">
+              <h3>About</h3>
+              <h3>Contact</h3>
+            </div>
+            <div class="s-icons">
+                <h4>follow us on</h4>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-facebook fa-1x"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+            <address>
+                <div class="address">
+                karad vita road ,41500,near yz college <br>
+                contact:2099-3631-345<br>
+                Email:xyzCafe@gmail.com<br>
+            </div>
+            </address>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.burger').click(function(){
+                    $('.burger').toggleClass('active');
+                });
+            });
+        </script>
+
+        <script>
+            let navBar = document.getElementById('nav-bar2');
+            let navList = document.getElementById('nav-list2');
+            let burger = document.getElementById('burger')
+            let body = document.getElementById('body');
+             navBar.style.height='55px';
+             navList.style.display='none';
+            burger.addEventListener('click',()=>{               
+              if(navBar.style.height=='55px'){
+                   navBar.style.height='200px';
+                   navList.style.display='block';
+              }
+              else{
+                  navBar.style.height='55px';
+                  navList.style.display='none';
+              }
+            
+            });
+        </script>
+</body>
+</html>
